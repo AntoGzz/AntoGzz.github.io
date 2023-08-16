@@ -1,457 +1,720 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - David</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 
-  <title>Folio Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- <link href="../../css2.css?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="assets/icons/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/smooth-scrollbar.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body class="home5-page">
+    <!-- Video Animation -->
+    <video class="body-overlay" muted="" autoplay="" loop="">
+        <source src="assets/videos/video5.mp4" type="video/mp4">
+    </video>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Folio - v4.3.0
-  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      <!-- Uncomment below if you prefer to use an text logo -->
-      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link  scrollto" href="#journal">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="bounceball"></div>
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="home">
+    <!-- Hamburger Menu -->
+    <span class="icon-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </span>
 
-    <div class="container">
-      <div class="hero-content">
-        <h1>I'm <span class="typed" data-typed-items="Alex Smith, Designer, Developer, Freelancer, Photographer"></span></h1>
-        <p>Designer, Developer, Freelancer, Photographer</p>
+    <!-- Right Menu -->
+    <div class="responsive-sidebar-menu">
+      <div class="overlay"></div>
+      <div class="sidebar-menu-inner">
+          <div class="menu-wrap">
+              <p>Menu</p>
+              <ul class="menu scroll-nav-responsive d-flex">
+                  <li>
+                      <a class="scroll-to fix" href="#home">
+                          <i class="las la-home"></i> <span>Inicio</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#about">
+                          <i class="lar la-user"></i> <span>Acerca de</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#resume">
+                          <i class="las la-briefcase"></i> <span>Resúmen</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#services">
+                          <i class="las la-stream"></i> <span>Servicios</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#skills">
+                          <i class="las la-shapes"></i> <span>Habilidades</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#portfolio">
+                          <i class="las la-grip-vertical"></i> <span>Portafolio</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#testimonial">
+                          <i class="lar la-comment"></i> <span>Testimonios</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="scroll-to fix" href="#contact">
+                          <i class="las la-envelope"></i> <span>Contacto</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
 
-        <ul class="list-unstyled list-social">
-          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-        </ul>
+          <div class="sidebar-social">
+              <p>Social</p>
+              <ul class="social-links d-flex align-items-center">
+                  <li>
+                      <a href=""><i class="lab la-github"></i></a>
+                  </li>
+                  <li>
+                      <a href=""><i class="lab la-linkedin"></i></a>
+                  </li>
+                  <li>
+                      <a href=""><i class="lab la-instagram"></i></a>
+                  </li>
+              </ul>
+          </div>
       </div>
     </div>
-  </div><!-- End Hero -->
 
-  <main id="main">
+    <!-- Right Bar Icons -->
+    <ul class="menu scroll-nav d-flex">
+      <li>
+        <a class="scroll-to" href="#home">
+          <span>Inicio</span> <i class="las la-home"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#about">
+          <span>Acerca de</span> <i class="lar la-user"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#resume">
+          <span>Resúmen</span> <i class="las la-briefcase"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#services">
+          <span>Servicios</span> <i class="las la-stream"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#skills">
+          <span>Habilidades</span> <i class="las la-shapes"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#portfolio">
+          <span>Portafolios</span> <i class="las la-grip-vertical"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#testimonial">
+          <span>Testimonios</span> <i class="lar la-comment"></i>
+        </a>
+      </li>
+      <li>
+        <a class="scroll-to" href="#contact">
+          <span>Contacto</span> <i class="las la-envelope"></i>
+        </a>
+      </li>
+    </ul>
 
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-      <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-4 ">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="about-descr">
-
-              <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
-              <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
-
-            </div>
-
-          </div>
-        </div>
+    <!-- Full Screen Left Sidebar -->
+    <div class="left-sidebar">
+      <div class="sidebar-header d-flex align-items-center justify-content-between">
+        <img src="assets/images/logo.png" alt="Logo" />
+        <span class="designation">Desarrollador Full-Stack</span>
       </div>
-    </div><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <div id="services">
-      <div class="container">
-
-        <div class="services-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-briefcase"></i>
-                <span>UI/UX DESIGN</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-card-checklist"></i>
-                <span>BRAND IDENTITY</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-bar-chart"></i>
-                <span>WEB DESIGN</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-binoculars"></i>
-                <span>MOBILE APPS</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-brightness-high"></i>
-                <span>Analytics</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-calendar4-week"></i>
-                <span>PHOTOGRAPHY</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </div><!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <div id="portfolio" class="paddsection">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>My Portfolio</h2>
-        </div>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Portfolio Section -->
-
-    <!-- ======= Journal Section ======= -->
-    <div id="journal" class="text-left paddsection">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>journal</h2>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="journal-block">
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
-
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Journal Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <div id="contact" class="paddsection">
-      <div class="container">
-        <div class="contact-block1">
-          <div class="row">
-
-            <div class="col-lg-6">
-              <div class="contact-contact">
-
-                <h2 class="mb-30">GET IN TOUCH</h2>
-
-                <ul class="contact-details">
-                  <li><span>23 Main, Street</span></li>
-                  <li><span>New York, United States</span></li>
-                  <li><span>+88 01912704287</span></li>
-                  <li><span>example@example.com</span></li>
-                </ul>
-
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row gy-3">
-
-                  <div class="col-lg-6">
-                    <div class="form-group contact-block1">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="mt-0">
-                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                  </div>
-
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
+      <img class="me" src="assets/images/me2.jpg" alt="Perfil" />
+      <h2 class="email">quirozd70@gmail.com</h2>
+      <h2 class="address">Caracas - Venezuela</h2>
+      <p class="copyright">&copy; 2023 David. Todos los Derechos Reservados</p>
+      <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+        <li>
+          <a href=""><i class="lab la-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lab la-dribbble"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lab la-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lab la-github"></i></a>
+        </li>
+      </ul>
+      <a href="#" class="theme-btn">
+        <i class="las la-envelope"></i> ¡Contratame!
+      </a>
     </div>
-  </div><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <main class="drake-main">
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+            <!-- Responsive Screen Left Sidebar -->
+            <div class="left-sidebar">
+              <div class="sidebar-header d-flex align-items-center justify-content-between">
+                  <img src="assets/images/logo.png" alt="Logo" />
+                  <span class="designation">Desarrollador Full-Stack</span>
+              </div>
+              <img class="me" src="assets/images/me.jpg" alt="Me" />
+              <h2 class="email">quirozd70@gmail.com</h2>
+              <h2 class="address">Caracas - Venezuela</h2>
+              <p class="copyright">
+                  &copy; 2023 David. Todos los Derechos Reservados
+              </p>
+              <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                  <li>
+                  <a href=""><i class="lab la-twitter"></i></a>
+                  </li>
+                  <li>
+                  <a href=""><i class="lab la-dribbble"></i></a>
+                  </li>
+                  <li>
+                  <a href=""><i class="lab la-instagram"></i></a>
+                  </li>
+                  <li>
+                  <a href=""><i class="lab la-github"></i></a>
+                  </li>
+              </ul>
+              <a href="#" class="theme-btn">
+                  <i class="las la-envelope"></i> ¡Contratame!
+              </a>
+            </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+            <!-- Main Section -->
+            <section class="hero-section page-section scroll-to-page" id="home">
+                <div class="custom-container">
+                    <div class="hero-content content-width">
+                      <div class="section-header">
+                          <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                          <i class="las la-home"></i> Presentación
+                          </h4>
+                          <h1 class="scroll-animation" data-animation="fade_from_bottom">
+                          Saluda a <span>David</span>, Desarrollador Full-Stack
+                          </h1>
+                      </div>
+                      <p class="scroll-animation" data-animation="fade_from_bottom">
+                        Creo que la simplicidad es la clave para la excelencia.<br>
+                        Cuando algo es simple, es fácil de usar, fácil de entender y fácil de recordar. <br>
+                        <span>También es más atractivo visualmente.</span>
+                      </p>
+                      <a href="#portfolio" class="go-to-project-btn scroll-to scroll-animation" data-animation="rotate_up">
+                          <img src="assets/images/decorations/round-text.png" alt="Rounded Text" />
+                          <i class="las la-arrow-down"></i>
+                      </a>
 
-</body>
+                      <div class="facts d-flex">
+                          <div class="left scroll-animation" data-animation="fade_from_left" >
+                          <h1>7+</h1>
+                          <p>Años de <br />Experiencia</p>
+                          </div>
+                          <div class="right scroll-animation" data-animation="fade_from_right">
+                          <h1>30+</h1>
+                          <p>proyectos completados en <br />3 países</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- About Section -->
+            <section class="about-area page-section scroll-to-page" id="about">
+                <div class="custom-container">
+                    <div class="about-content content-width">
+                        <div class="section-header">
+                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                <i class="lar la-user"></i> Acerca de
+                            </h4>
+                            <h1 class="scroll-animation" data-animation="fade_from_bottom">Cada gran desarrollo comienza con una historia 
+                                <span>aún mejor</span>
+                            </h1>
+                        </div>
+                        <p class="scroll-animation" data-animation="fade_from_bottom">
+                          Soy un desarrollador independiente con más de 8 años de experiencia en el desarrollo de sitios web, aplicaciones 
+                          móviles y software. He trabajado con una variedad de clientes, desde pequeñas empresas hasta grandes corporaciones, 
+                          y he ayudado a crear productos digitales exitosos que han ayudado a mis clientes a alcanzar sus objetivos.
+                          <br><br>Soy un desarrollador versátil con una sólida comprensión de las últimas tecnologías. También soy un gran 
+                          comunicador y tengo la capacidad de trabajar eficazmente con otros. Siempre estoy buscando nuevas oportunidades 
+                          para aprender y crecer, y estoy comprometido a proporcionar a mis clientes el mejor servicio posible.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume Section -->
+            <section class="resume-area page-section scroll-to-page" id="resume">
+                <div class="custom-container">
+                    <div class="resume-content content-width">
+                        <div class="section-header">
+                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-briefcase"></i> Resúmen
+                            </h4>
+                            <h1 class="scroll-animation" data-animation="fade_from_bottom">Educación & <span>Experiencia</span></h1>
+                        </div>
+    
+                        <div class="resume-timeline">
+                            <div class="item scroll-animation" data-animation="fade_from_right">
+                                <span class="date">2023 - Presente</span>
+                                <h2>Desarrollador Full-Stack</h2>
+                                <p>Disglobal C.A.</p>
+                                <!-- <h2>Front-End WordPress Developer</h2> -->
+                                <!-- <p>Envato Market</p> -->
+                            </div>
+                            <div class="item scroll-animation" data-animation="fade_from_right">
+                                <span class="date">2022 - Presente</span>
+                                <h2>Ingeniería en Informatica</h2>
+                                <p>Universidad Experimental de la Gran Caracas</p>
+                            </div>
+                            <div class="item scroll-animation" data-animation="fade_from_right">
+                                <span class="date">2016 - 2022</span>
+                                <h2>Desarrollador Web & Móvil</h2>
+                                <p>Date Geek C.A.</p>
+                                <h2>Consultor de Técnologia e Infraestructura</h2>
+                                <p>Soluciones en T.I</p>
+                                <h2>Desarrollador Web</h2>
+                                <p>Imagina Colombia C.A.</p>
+                            </div>
+                            
+                            <div class="item scroll-animation" data-animation="fade_from_right">
+                                <span class="date">2014 - 2017</span>
+                                <h2>Técnico Superior Universitario en Informatica</h2>
+                                <p>Instituto Universitario Jesús Obrero</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services-area page-section scroll-to-page" id="services">
+                <div class="custom-container">
+                    <div class="services-content content-width">
+                        <div class="section-header">
+                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-stream"></i> Servicios
+                            </h4>
+                            <h1 class="scroll-animation" data-animation="fade_from_bottom">Mis <span>Especializaciones</span></h1>
+                        </div>
+    
+                        <div class="services-items">
+                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-code"></i>
+                                <h2>Diseño y desarrollo de sitios web</h2>
+                                <p>Creando sitios web que son atractivos, fáciles de usar y optimizados para los motores de búsqueda.</p>
+                                <span class="projects">26 Projects</span>
+                            </div>
+                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-bezier-curve"></i>
+                                <h2>Mantenimiento y actualización de sitios web	</h2>
+                                <p>Garantizando que tu sitio web ó sistema esté siempre disponible y en buen estado.</p>
+                                <span class="projects">26 Projects</span>
+                            </div>
+                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-cloud-upload-alt"></i>
+                                <h2>Despliegue de Aplicaciones</h2>
+                                <p>Desplegando tus aplicaciones al mercado de la forma mas segura y eficiente.</p>
+                                <span class="projects">5 Projects</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-area page-section scroll-to-page" id="skills">
+                <div class="custom-container">
+                    <div class="skills-content content-width">
+                        <div class="section-header">
+                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-shapes"></i> Mis Habilidades
+                            </h4>
+                            <h1 class="scroll-animation" data-animation="fade_from_bottom">Mis <span>Habilidades</span></h1>
+                        </div>
+    
+                        <div class="row skills text-center">
+                          <!-- Frameworks Back -->
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                              <div class="skill">
+                                  <div class="skill-inner">
+                                      <img src="assets/images/skills/laravel.png" alt="Laravel/PHP">
+                                      <h1 class="percent">92%</h1>
+                                  </div>
+                                  <p class="name">Laravel/PHP</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                              <div class="skill">
+                                  <div class="skill-inner">
+                                      <img src="assets/images/skills/wordpress.png" alt="Wordpress">
+                                      <h1 class="percent">70%</h1>
+                                  </div>
+                                  <p class="name">Wordpress</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/codeigniter.png" alt="Codeigniter">
+                                    <h1 class="percent">70%</h1>
+                                </div>
+                                <p class="name">Codeigniter</p>
+                            </div>
+                          </div>
+                          <!-- Frameworks Front -->
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/boostrap.png" alt="Boostrap">
+                                    <h1 class="percent">90%</h1>
+                                </div>
+                                <p class="name">Boostrap</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/quasar.png" alt="Quasar">
+                                    <h1 class="percent">70%</h1>
+                                </div>
+                                <p class="name">Quasar</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                              <div class="skill">
+                                  <div class="skill-inner">
+                                      <img src="assets/images/skills/react.png" alt="React">
+                                      <h1 class="percent">50%</h1>
+                                  </div>
+                                  <p class="name">React</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/angular.png" alt="Angular/PHP">
+                                    <h1 class="percent">50%</h1>
+                                </div>
+                                <p class="name">Angular/PHP</p>
+                            </div>
+                          </div>
+                          <!-- Databases -->
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                              <div class="skill">
+                                  <div class="skill-inner">
+                                      <img src="assets/images/skills/mysql.png" alt="MySql">
+                                      <h1 class="percent">80%</h1>
+                                  </div>
+                                  <p class="name">MySql</p>
+                              </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/postgresql.png" alt="PostgreSQL">
+                                    <h1 class="percent">70%</h1>
+                                </div>
+                                <p class="name">PostgreSQL</p>
+                            </div>
+                          </div>
+                          <!-- Version Control -->
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/gitlab.png" alt="GitLab">
+                                    <h1 class="percent">70%</h1>
+                                </div>
+                                <p class="name">GitLab</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/github.png" alt="GitHub">
+                                    <h1 class="percent">70%</h1>
+                                </div>
+                                <p class="name">GitHub</p>
+                            </div>
+                          </div>
+                          <!-- Others Skills -->
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/restapi.png" alt="Rest Api">
+                                    <h1 class="percent">80%</h1>
+                                </div>
+                                <p class="name">Rest Api</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/nodejs.png" alt="Node Js">
+                                    <h1 class="percent">70%</h1>
+                                </div>
+                                <p class="name">Node Js</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/ajax.png" alt="Ajax">
+                                    <h1 class="percent">85%</h1>
+                                </div>
+                                <p class="name">Ajax</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="assets/images/skills/javascript.png" alt="Javascript">
+                                    <h1 class="percent">85%</h1>
+                                </div>
+                                <p class="name">Javascript</p>
+                            </div>
+                          </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonial-area page-section scroll-to-page" id="testimonial">
+              <div class="custom-container">
+                  <div class="testimonial-content content-width">
+                      <div class="section-header">
+                          <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                              <i class="lar la-comment"></i> Testimonios
+                          </h4>
+                          <h1 class="scroll-animation" data-animation="fade_from_bottom">Certificado por <span> muchos clientes</span></h1>
+                      </div>
+  
+                      <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
+                          <div class="owl-carousel testimonial-slider owl-theme">
+                              <div class="testimonial-item">
+                                  <div class="testimonial-item-inner">
+                                      <div class="author d-flex align-items-center">
+                                          <img src="assets/images/testimonials/testimonial-1.jpg" alt="portfolio">
+                                          <div class="right">
+                                              <h3>Juan Pablo</h3>
+                                              <p class="designation">Fundador de <span>Imagina Colombia</span></p>
+                                          </div>
+                                      </div>
+                                      <p>"David: un desarrollador con creatividad, profesional y maestro del código. 
+                                        Mucho más de lo que esperaba. Productos de alta calidad y precio flexible. ¡Recomendado!.”</p>
+                                        <a href="" class="project-btn">Proyecto</a>
+                                  </div>
+                              </div>
+                              <div class="testimonial-item">
+                                  <div class="testimonial-item-inner">
+                                      <div class="author d-flex align-items-center">
+                                          <img src="assets/images/testimonials/testimonial-2.jpg" alt="portfolio">
+                                          <div class="right">
+                                              <h3>Juan Carlos</h3>
+                                              <p class="designation">Lider de Proyecto <span>Soluciones en T.I</span></p>
+                                          </div>
+                                      </div>
+                                      <p>“Fue un verdadero placer trabajar con David y esperamos volver a trabajar con él. 
+                                        Definitivamente es el tipo de desarrollador en el que puedes confiar con cualquier 
+                                        proyecto de la A a la Z.”</p>
+                                      <a href="" class="project-btn">Proyecto</a>
+                                  </div>
+                              </div>
+                              <div class="testimonial-item">
+                                  <div class="testimonial-item-inner">
+                                      <div class="author d-flex align-items-center">
+                                          <img src="assets/images/testimonials/testimonial-3.jpg" alt="portfolio">
+                                          <div class="right">
+                                              <h3>Alferson Fajardo</h3>
+                                              <p class="designation">Supervisor de Tecnología <span>Disglobal C.A.</span></p>
+                                          </div>
+                                      </div>
+                                      <p>“¡Servicio extremadamente profesional y rápido!. David es un maestro del 
+                                        código y también muy creativo. Hicimos 3 proyectos con él y seguro que seguirá.”</p>
+                                      <a href="" class="project-btn">Proyecto</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="testimonial-footer-nav">
+                              <div class="testimonial-nav d-flex align-items-center">
+                                  <button class="prev"><i class="las la-angle-left"></i></button>
+                                  <div id="testimonial-slide-count"></div>
+                                  <button class="next"><i class="las la-angle-right"></i></button>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Clients Logos -->
+                      <div class="clients-logos">
+                          <h4 class="scroll-animation" data-animation="fade_from_bottom">Trabajando en 26+ proyectos de distintos clientes</h4>
+                          <div class="row align-items-center">
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                  <img src="assets/images/clients/dategeek.png" alt="DateGeek C.A.">
+                              </div>
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                  <img src="assets/images/clients/sti.png" alt="Soluciones en T.I">
+                              </div>
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                  <img src="assets/images/clients/imagina-colombia.png" alt="Imagina Colombia C.A.">
+                              </div>
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                  <img src="assets/images/clients/disglobal.png" alt="Disglobal">
+                              </div>
+                              <!-- <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                  <img src="assets/images/clients/client-5.png" alt="client">
+                              </div>
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                  <img src="assets/images/clients/client-6.png" alt="client">
+                              </div>
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                  <img src="assets/images/clients/client-7.png" alt="client">
+                              </div>
+                              <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                  <img src="assets/images/clients/client-8.png" alt="client">
+                              </div> -->
+                          </div>
+                      </div>
+  
+                  </div>
+              </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-area page-section scroll-content" id="contact">
+              <div class="custom-container">
+                  <div class="contact-content content-width">
+                      <div class="section-header">
+                          <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                              <i class="las la-dollar-sign"></i> Contacto
+                          </h4>
+                          <h1 class="scroll-animation" data-animation="fade_from_bottom">¡Trabajemos <span>juntos!</span></h1>
+                      </div>
+                      <h3 class="scroll-animation" data-animation="fade_from_bottom">quirozd70@gmail.com</h3>
+                      <p id="required-msg">* Los campos marcados son obligatorios para llenar.</p>
+
+                      <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" action="mailer.php">
+                          <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                            Su mensaje fue enviado exitosamente.
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="input-group">
+                                      <label for="full-name">Nombre Completo <sup>*</sup></label>
+                                      <input type="text" name="full-name" id="full-name" placeholder="Tu Nombre completo">
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="input-group">
+                                      <label for="email">Correo Electrónico <sup>*</sup></label>
+                                      <input type="email" name="email" id="email" placeholder="Tu dirección de correo electrónico">
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="input-group">
+                                      <label for="phone-number">Télefono <span>(opcional)</span></label>
+                                      <input type="text" name="phone-number" id="phone-number" placeholder="Tu número telefonico">
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="input-group">
+                                      <label for="subject">Asunto <sup>*</sup></label>
+                                      <select name="subject" id="subject">
+                                          <option value="">Selecciona un elemento</option>
+                                          <option value="subject1">Desarrollo Full-Stack</option>
+                                          <option value="subject2">Desarrollo Backend</option>
+                                          <option value="subject3">Desarrollo Frontend</option>
+                                          <option value="subject4">Desarrollo ApiRest</option>
+                                          <option value="subject5">Desarrollo Página Web</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="input-group">
+                                      <label for="budget">Tu presupuesto <span>(opcional)</span></label>
+                                      <input type="number" name="budget" id="budget" placeholder="Un rango de precios para tu proyecto">
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="input-group">
+                                      <label for="message">Mensaje</label>
+                                      <textarea name="message" id="message" placeholder="Escribe tu mensaje aqui ..."></textarea>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="input-group upload-attachment">
+                                      <div>
+                                          <label for="upload-attachment">
+                                              <i class="las la-cloud-upload-alt"></i> Añade un archivo
+                                              <input type="file" name="file" id="upload-attachment">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="input-group submit-btn-wrap">
+                                      <button class="theme-btn" name="submit" type="submit" id="submit-form">Enviar Mensaje</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/color.js"></script>
+  </body>
 </html>

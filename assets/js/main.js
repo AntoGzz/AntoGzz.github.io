@@ -1,262 +1,273 @@
-/**
-* Template Name: Folio - v4.3.0
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
+$(function(){
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  /**
-   * Hero type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+    $(window).on('load', function () {
+        $('.page-loader').delay('500').fadeOut(1000);
     });
-  }
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.services-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 20
-      }
-    }
-  });
+    $(document).ready(function() {
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
+        $(document).on('click', '.icon-menu', function() {
+            $('.responsive-sidebar-menu').addClass('active');
         });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+        $(document).on('click', '.responsive-sidebar-menu .overlay', function() {
+            $('.responsive-sidebar-menu').removeClass('active');
         });
 
-      }, true);
+        $(document).on('click', '.menu li .scroll-to', function() {
+            $('.responsive-sidebar-menu').removeClass('active');
+        })
+
+
+        $(document).on('click', ".color-boxed a", function() {
+            $(".color-boxed a").removeClass("clr-active");
+            $(this).addClass("clr-active");
+        });
+        
+        $(document).on('click', ".global-color .setting-toggle", function() {
+            $(".global-color").addClass("active");
+        });
+
+        $(document).on('click', ".global-color .inner .overlay, .global-color .inner .global-color-option .close-settings", function() {
+            $(".global-color").removeClass("active");
+        });
+
+    });
+
+    $(window).scroll(function() {
+            
+        var windscroll = $(window).scrollTop();
+        if (windscroll >= 0) {
+            $('.page-section').each(function(i) {
+                if ($(this).position().top <= windscroll - -1) {
+                    $('.scroll-nav .scroll-to.active').removeClass('active');
+                    $('.scroll-nav .scroll-to').eq(i).addClass('active');
+                    $('.scroll-nav-responsive a.active').removeClass('active');
+                    $('.scroll-nav-responsive a').eq(i).addClass('active');
+                }
+            });
+
+        } else {
+
+            $('.scroll-nav .scroll-to.active').removeClass('active');
+            $('.scroll-nav .scroll-to:first').addClass('active');
+            $('.scroll-nav-responsive a.active').removeClass('active');
+            $('.scroll-nav-responsive a:first').addClass('active');
+        }
+
+        if (windscroll >= 0) {
+            $('.scroll-to-page').each(function(i) {
+
+                var wscrolldecress = windscroll + 1;
+                // console.log(wscrolldecress);
+                if ($(this).position().top <= wscrolldecress - 0) {
+                    $('.scroll-nav .scroll-to.active').removeClass('active');
+                    $('.scroll-nav .scroll-to').eq(i).addClass('active');
+                    $('.scroll-nav-responsive a.active').removeClass('active');
+                    $('.scroll-nav-responsive a').eq(i).addClass('active');
+                }
+            });
+
+        } else {
+            $('.scroll-nav .scroll-to.active').removeClass('active');
+            $('.scroll-nav .scroll-to:first').addClass('active');
+            $('.scroll-nav-responsive a.active').removeClass('active');
+            $('.scroll-nav-responsive a:first').addClass('active');
+        }
+
+    }).scroll();
+
+
+
+
+
+
+
+    if ($('.testimonial-slider').length) {
+        var testimonial = $('.testimonial-slider').owlCarousel({
+            items: 1,
+            margin: 30,
+            stagePadding: 0,
+            smartSpeed: 450,
+            autoHeight: true,
+            loop: false,
+            nav: false,
+            dots: false,
+            onInitialized  : counter, //When the plugin has initialized.
+            onTranslated : counter //When the translation of the stage has finished.
+        });
+
+        $('.testimonial-nav .next').on('click', function() {
+            testimonial.trigger('next.owl.carousel');
+        })
+        $('.testimonial-nav .prev').on('click', function() {
+            testimonial.trigger('prev.owl.carousel', [300]);
+        })
+
+
+        function counter(event) {
+            var element   = event.target;         // DOM element, in this example .owl-carousel
+            var items     = event.item.count;     // Number of items
+            var item      = event.item.index + 1;     // Position of the current item
+        
+        // it loop is true then reset counter from 1
+        if(item > items) {
+                item = item - items
+        }
+        $('#testimonial-slide-count').html("<span class='left'>"+item+"</span> / "+items)
+        }
     }
 
-  });
+    // function remove_is_active() {
+    //     $(".menu .scroll-to").removeClass("active");
+    // }
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+    // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+    // var container = document.querySelector("#smooth-content");
 
-})()
+    // var height;
+    // function setHeight() {
+    //     height = container.clientHeight;
+
+
+    //     document.body.style.height = height + "px";
+    // }
+    // ScrollTrigger.addEventListener("refreshInit", setHeight);
+
+    // gsap.to(container, {
+    //     y: () => -(height - document.documentElement.clientHeight),
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: container,
+    //         start: "top top",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //         invalidateOnRefresh: true,
+    //     }
+    // });
+
+    window.addEventListener('scroll', {
+        scroll_animations,
+    });
+
+
+    // Array.prototype.slice.call(document.querySelectorAll(".page-section")).forEach(function (e, t) {
+    //     ScrollTrigger.create({
+    //         trigger: e,
+    //         id: t + 1,
+    //         start: "top center",
+    //         end: function () {
+    //             return "+=".concat(e.clientHeight - 30);
+    //         },
+    //         toggleActions: "play reverse none reverse",
+    //         toggleClass: { targets: e, className: "active" },
+    //         onToggle: function () {
+    //             $(".menu .scroll-to").removeClass("active"), "" != e.id && $('.menu .scroll-to[href*="#' + e.id + '"]').addClass("active");
+    //         },
+    //     });
+    // });
+
+    // document.querySelectorAll('.scroll-to').forEach((e) => {
+    //     const target = e.getAttribute('href');
+    //     const targetEl = document.querySelector(target);
+    //     // const targetRect = targetEl.getBoundingClientRect();
+
+
+    //     var offset = gsap.getProperty("#smooth-content", "y");
+    //     var position = jQuery(target).get(0).getBoundingClientRect().top - offset;
+    
+
+    //     e.addEventListener('click', (e) => {
+    //         e.preventDefault();
+
+    //         gsap.to(window, {
+    //             scrollTo: position,
+    //             ease: "power4",
+    //             duration: 0.1,
+    //             onToggle: function () {
+    //                 console.log('toggle');
+    //                 remove_is_active();
+    //                 if (targetEl.id != "") $('.menu .scroll-to[href*="#' + targetEl.id + '"]').addClass("active");
+    //             },
+    //             onLeaveBack: function () {
+    //                 console.log('leave back');
+    //                 remove_is_active();
+    //                 if (targetEl.id != "") $('.menu .scroll-to[href*="#' + targetEl.id + '"]').addClass("active");
+    //             },
+    //             onLeave: function () {
+    //                 console.log('leave');
+    //                 remove_is_active();
+    //                 if (targetEl.id != "") $('.menu .scroll-to[href*="#' + targetEl.id + '"]').addClass("active");
+    //             },
+    //             overwrite: !0,
+    //         });
+    //     });
+
+        
+    
+    // });
+
+});
+
+
+
+function scroll_animations() {
+    // var allow_on_mobile = !0;
+    // if (typeof config_scroll_animation_on_mobile !== "undefined") allow_on_mobile = config_scroll_animation_on_mobile;
+    // if (allow_on_mobile == !1 && is_mobile_device) return;
+    var defaults = {
+        duration: 1.2,
+        ease: "power4.out",
+        animation: "fade_from_bottom",
+        once: !1,
+    };
+    gsap.utils.toArray(".scroll-animation").forEach(function (box) {
+        var gsap_obj = {};
+        var settings = {
+            // ease: box.dataset.animationEase || defaults.ease,
+            duration: box.dataset.animationDuration || defaults.duration,
+        };
+        var animations = {
+            fade_from_bottom: {
+                y: 180,
+                opacity: 0,
+            },
+            fade_from_top: {
+                y: -180,
+                opacity: 0,
+            },
+            fade_from_left: {
+                x: -180,
+                opacity: 0,
+            },
+            fade_from_right: {
+                x: 180,
+                opacity: 0,
+            },
+            fade_in: {
+                opacity: 0,
+            },
+            rotate_up: {
+                y: 180,
+                rotation: 10,
+                opacity: 0,
+            },
+        };
+        var scroll_trigger = {
+            scrollTrigger: {
+                trigger: box,
+                once: defaults.once,
+                start: "top bottom+=20%",
+                // start: "top bottom+=5%",
+                toggleActions: "play none none reverse",
+                markers: !1,
+            },
+        };
+        jQuery.extend(gsap_obj, settings);
+        jQuery.extend(gsap_obj, animations[box.dataset.animation || defaults.animation]);
+        jQuery.extend(gsap_obj, scroll_trigger);
+        gsap.from(box, gsap_obj);
+    });
+}
+scroll_animations();
