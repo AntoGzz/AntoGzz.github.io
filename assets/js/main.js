@@ -118,6 +118,41 @@ $(function(){
         }
     }
 
+    if ($('.portfolio-slider').length) {
+        var portfolio = $('.portfolio-slider').owlCarousel({
+            items: 1,
+            margin: 30,
+            stagePadding: 0,
+            smartSpeed: 450,
+            autoHeight: true,
+            loop: false,
+            nav: false,
+            dots: false,
+            onInitialized  : counter, //When the plugin has initialized.
+            onTranslated : counter //When the translation of the stage has finished.
+        });
+
+        $('.portfolio-nav .next').on('click', function() {
+            portfolio.trigger('next.owl.carousel');
+        })
+        $('.portfolio-nav .prev').on('click', function() {
+            portfolio.trigger('prev.owl.carousel', [300]);
+        })
+
+
+        function counter(event) {
+            var element   = event.target;         // DOM element, in this example .owl-carousel
+            var items     = event.item.count;     // Number of items
+            var item      = event.item.index + 1;     // Position of the current item
+        
+        // it loop is true then reset counter from 1
+        if(item > items) {
+                item = item - items
+        }
+        $('#portfolio-slide-count').html("<span class='left'>"+item+"</span> / "+items)
+        }
+    }
+
     // function remove_is_active() {
     //     $(".menu .scroll-to").removeClass("active");
     // }
