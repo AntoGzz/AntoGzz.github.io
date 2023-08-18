@@ -102,6 +102,24 @@ ul {
     padding: 0 15px;
     margin: auto;
 }
+.fix-subtitle{
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    border: 1px solid #565656;
+    padding: 9px 20px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    display: inline-flex;
+    align-items: center;
+}
+.fix-subtitle i {
+    margin-bottom: 1px;
+    font-size: 14px;
+    margin-right: 10px;
+}
 .subtitle {
     font-size: 12px;
     color: #ffffff;
@@ -111,7 +129,7 @@ ul {
     border: 1px solid #565656;
     padding: 9px 20px;
     border-radius: 30px;
-    margin-bottom: 53px;
+    margin-bottom: 45px;
     display: inline-flex;
     align-items: center;
 }
@@ -739,7 +757,7 @@ main.drake-main {
 
 /* 07 - Hero Section */
 .hero-section {
-    padding: 68px 0;
+    padding: 60px 0;
     position: relative;
     overflow: hidden;
 }
@@ -761,14 +779,14 @@ main.drake-main {
 .hero-section .hero-content > p {
     /* max-width: 480px; */
     max-width: 610px;
-    margin-bottom: 31px;
+    /* margin-bottom: 31px; */
 }
 .hero-section .hero-content p span {
     color: var(--primary_color);
 }
 .hero-section .hero-content .go-to-project-btn {
-    width: 175px;
-    height: 175px;
+    width: 145px;
+    height: 145px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -792,7 +810,7 @@ main.drake-main {
 }
 .hero-section .hero-content .facts {
     gap: 100px;
-    margin-top: 55px;
+    /* margin-top: 55px; */
 }
 .hero-section .hero-content .facts h1 {
     font-size: 72px;
@@ -871,7 +889,7 @@ body .body-overlay {
 
 /* 11 - Resume */
 .resume-area {
-    padding-top: 90px;
+    padding-top: 45px;
     padding-bottom: 90px;
 }
 .resume-area .resume-content .resume-timeline .item {
@@ -940,7 +958,7 @@ body .body-overlay {
 
 /* 12 - Services */
 .services-area {
-    padding-top: 90px;
+    padding-top: 45px;
     padding-bottom: 90px;
 }
 .services-items .service-item {
@@ -996,7 +1014,7 @@ body .body-overlay {
 
 /* 13 - Skills */
 .skills-area {
-    padding-top: 90px;
+    padding-top: 45px;
     padding-bottom: 40px;
 }
 .skills .skill {
@@ -1095,23 +1113,28 @@ body .body-overlay {
 }
 
 /* TODO: MOVER DE AQUI */
-.testimonial-item .testimonial-item-inner > div:last-child .portfolio-item {
+.main-class-portfolio-item .main-class-portfolio-item-inner {
+    border: 2px solid #565656;
+    border-radius: 30px;
+    padding: 30px 30px 30px 30px;
+}
+.main-class-portfolio-item .main-class-portfolio-item-inner > div:last-child .portfolio-item {
     margin-bottom: 0;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item .portfolio-item-inner {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item .portfolio-item-inner {
     height: 370px;
     overflow: hidden;
     border-radius: 30px;
     position: relative;
     margin-bottom: 30px;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item .portfolio-item-inner img {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item .portfolio-item-inner img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item .portfolio-item-inner .portfolio-categories {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item .portfolio-item-inner .portfolio-categories {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -1120,7 +1143,7 @@ body .body-overlay {
     bottom: 20px;
     left: 20px;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item .portfolio-item-inner .portfolio-categories li a {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item .portfolio-item-inner .portfolio-categories li a {
     display: block;
     font-size: 14px;
     background: #fff;
@@ -1129,26 +1152,26 @@ body .body-overlay {
     border-radius: 19px;
     transition: .3s;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item:hover .portfolio-item-inner .portfolio-categories li a {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item:hover .portfolio-item-inner .portfolio-categories li a {
     background: #1f1f1f;
     color: #fff;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item h2 {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item h2 {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item h2 a {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item h2 a {
     color: #fff;
     display: inline-block;
     border-bottom: 1px solid transparent;
     transition: .3s;
 }
-.testimonial-item .testimonial-item-inner .portfolio-item:hover h2 a {
+.main-class-portfolio-item .main-class-portfolio-item-inner .portfolio-item:hover h2 a {
     border-color: #ffffff;
 }
 .portfolio-area .portfolio-slider-wrap .portfolio-footer-nav {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .portfolio-area .portfolio-slider-wrap .portfolio-footer-nav .portfolio-nav {
     gap: 15px;
@@ -1180,6 +1203,10 @@ body .body-overlay {
 
 
 /* 15 - Testimonial */
+.testimonial-area {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
 .testimonial-item .testimonial-item-inner {
     border: 2px solid #565656;
     border-radius: 30px;
@@ -1359,6 +1386,7 @@ body .body-overlay {
 
 /* 18 - Contact */
 .contact-area {
+    padding-top: 90px;
     padding-bottom: 50px;
 }
 .contact-area .contact-content h3 {
