@@ -1,54 +1,50 @@
+<!--TEMPLATE https://github.com/clcmo/clcmo/tree/main -->
 
   
-  <h1><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"> Hello, I'm Camila L. Oliveira 
-  <a href="https://taggo.one/clcmo"><img src="https://github.com/clcmo/clcmo/blob/main/memoji_mi.png"  width="15%" align="right" alt="Memoji"/></a></h1>
+  <h1><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%" style="background-color: transparent;"> Hola, Soy David Quiroz 
+  <a href="https://github.com/AntoGzz/AntoGzz.github.io"><img src="https://github.com/AntoGzz/AntoGzz.github.io/blob/master/assets/images/profile.webp"  width="15%" align="right" alt="David" style="border-radius:40px;padding-right:20px"/></a></h1>
 
 ------------
 
 <details>
   <summary>
-    <h2>👩‍🦰 About Me</h2>
+    <h2>🦝 Sobre Mi</h2>
   </summary>
   
-I have a degree in Public Administration, I worked in the area, but if there's one thing I've discovered, it's that I have the vocation to develop software - and dreams too - in addition to communicating.
+Soy un desarrollador independiente con más de 8 años de experiencia en el desarrollo de sitios web, aplicaciones móviles y software. He trabajado con una variedad de clientes, desde pequeñas empresas hasta grandes corporaciones, y he ayudado a crear productos digitales exitosos que han ayudado a mis clientes a alcanzar sus objetivos.
 
-Today I work in application development, an experience that started in earnest in 2019, and I also enjoy learning and teaching. In addition to writing on websites and blogs (and there are three, well segmented: a personal one, a musical one and a tech one), I have just over 1000 followers in the three largest social networks.
-
-I also have knowledge in two more languages: English and French, and I aim, in addition to continuing to improve myself, to be able to teach people who are curious and willing to get to know this so rich area that is technology.
+Me considero un desarrollador versátil con una sólida comprensión de las últimas tecnologías. También soy un gran comunicador y tengo la capacidad de trabajar eficazmente con otros. Siempre estoy buscando nuevas oportunidades para aprender y crecer, y estoy comprometido a proporcionar a mis clientes el mejor servicio posible.
   
 <details>
   <summary>
-  <h3> 🏫 Education </h3>
+  <h3> 🏫 Educación </h3>
   </summary>
-  
-* Postgraduate, Lato-Sensu, in Artificial Intelligence <br/>(PUC-SP)
-* Technologist in Systems Analysis and Development <br/>(FATEC-SP)
-* Bachelor in Public Administration <br/>(UFOP-MG)
+
+* Ingeniería en Informatica: Universidad Experimental de la Gran Caracas
+* Técnico Superior Universitario en Informatica: Instituto Universitario Jesús Obrero
   
 </details>
   
 <details>
   <summary>
-  <h3> 🖥️ Works </h3>
+  <h3> 🖥️ Trabajos </h3>
   </summary>
 
-* Android Mobile Engineering and Development (Full - ⭐⭐) <br/>(Itaú; Robert Half + PagBank PagSeguro; and BRQ + Itaú) 
-* Android Mobile Engineering and Development (Junior - ⭐) <br/>(TCS + Itaú)
-* Mobile Development Assistant - Android <br/>(TCS + Itaú)
-* Mobile Development Trainee - Android <br/>(TCS + Itaú)
-* Internship in Systems Analysis and Development <br/>(ETEC Antonio Furlan)
-* Two internships in Public Administration <br/>(CETESB and RR Business)
+* Desarrollador Full-Stack <br/>Disglobal C.A.
+* Desarrollador Web & Móvil <br/>Date Geek C.A.
+* Consultor de Técnologia e Infraestructura <br/>Soluciones en T.I
+* Desarrollador Web <br/>Imagina Colombia C.A.
   
 </details>
   
 <details>
   <summary>
-  <h3> 📚 Learnings and Hobbies </h3>
+  <h3> 📚 Cursos & Hobbies </h3>
   </summary>
   
-* I'm learning about Google Analytics and AWS, architetures, modules, Flutter and more;
-* I shared some lessons about creating your website or meeting the Android's lifecycle on [studio urbanna](https://studiourbanna.github.io);
-* I love 🥤 Soda, 🎮 Games and 🎭 Arts. Specially, photos and music.
+* Estoy aprendiendo sobre arquitecturas, módulos, Flutter y más;
+* Diversos cursos realizados en el área de desarrollo en [Udemy] (https://www.udemy.com);
+* Amo 🥤 Chuches, Refrescos y sobre todo los 🎮 Juegos.
 
 </details>
   </details>
@@ -56,12 +52,12 @@ I also have knowledge in two more languages: English and French, and I aim, in a
 ------------
 <details>
   <summary>
-   <h2>🖥️ Technologies and Skills</h2>
+   <h2>🖥️ Tecnologias & Habilidades</h2>
   </summary>
 
 <details>
   <summary>
-    <h3> 📚 Control Versions </h3>
+    <h3> 📚 Control de Versiones </h3>
   </summary>
   
   [![Git](https://img.shields.io/badge/git-orange?style=for-the-badge&logo=git&logoColor=white)](#)
@@ -75,13 +71,11 @@ I also have knowledge in two more languages: English and French, and I aim, in a
     <h3> 📚 Frontend </h3>
   </summary>
   
-  [![Java](https://img.shields.io/badge/java-red?style=for-the-badge&logo=CoffeeScript&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=java&sort=)
-  [![Kotlin](https://img.shields.io/badge/kotlin-blue?style=for-the-badge&logo=Kotlin&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=kotlin&sort=)
-  [![Android](https://img.shields.io/badge/android-green?style=for-the-badge&logo=Android&logoColor=white)](#)
   [![Wordpress](https://img.shields.io/badge/wordpress-white?style=for-the-badge&logo=wordpress&logoColor=blue)](#)
-  [![HTML5](https://img.shields.io/badge/html-blue?style=for-the-badge&logo=HTML5&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=html&sort=)
-  [![CSS3](https://img.shields.io/badge/css-grey?style=for-the-badge&logo=CSS3&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=css&sort=) 
-  [![SCSS](https://img.shields.io/badge/scss-violet?style=for-the-badge&logo=Sass&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=scss&sort=)
+  [![HTML5](https://img.shields.io/badge/html-blue?style=for-the-badge&logo=HTML5&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=html&sort=)
+  [![CSS3](https://img.shields.io/badge/css-grey?style=for-the-badge&logo=CSS3&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=css&sort=) 
+  [![SCSS](https://img.shields.io/badge/scss-violet?style=for-the-badge&logo=Sass&logoColor=white)]()
+  [![BOOSTRAP](https://img.shields.io/badge/boostrap-darkred?style=for-the-badge&logo=Boostrap&logoColor=white)]()
 
 </details>
 
@@ -90,25 +84,30 @@ I also have knowledge in two more languages: English and French, and I aim, in a
     <h3> 📚 Backend </h3>
   </summary>
   
-  [![JavaScript](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=JavaScript&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=js&sort=)
+  [![JavaScript](https://img.shields.io/badge/javascript-darkred?style=for-the-badge&logo=JavaScript&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=javascript&sort=)
   [![MySQL](https://img.shields.io/badge/mysql-blue?style=for-the-badge&logo=MySQL&logoColor=white)](https://github.com/clcmo?tab=repositories&q=&type=&language=mysql&sort=) 
-  
+   [![Blade](https://img.shields.io/badge/blade-orange?style=for-the-badge&logo=Blade&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=blade&sort=) 
+   [![Python](https://img.shields.io/badge/python-green?style=for-the-badge&logo=Python&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=python&sort=) 
+   [![Lua](https://img.shields.io/badge/lua-brown?style=for-the-badge&logo=Lua&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=lua&sort=) 
+   [![PHP](https://img.shields.io/badge/php-blue?style=for-the-badge&logo=MySQL&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=php&sort=) 
+   [![TypeScript](https://img.shields.io/badge/typescript-aquamarine?style=for-the-badge&logo=TypeScript&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=typescript&sort=) 
+   
+   
 </details>
     
 <details>
   <summary>
-    <h3> 📚 Skills </h3>
+    <h3> 📚 Habilidades </h3>
   </summary>
   
-  [![Planning](https://img.shields.io/badge/planning-red?style=for-the-badge&logo=Trello&logoColor=white)](#)
-  [![Kanban](https://img.shields.io/badge/kanban-violet?style=for-the-badge&logo=Jira&logoColor=white)](#)
-  [![Architetures](https://img.shields.io/badge/architetures-grey?style=for-the-badge&logo=Android%20Studio&logoColor=white)](#)
-  [![Work With Teams](https://img.shields.io/badge/work%20with%20teams-blueviolet?style=for-the-badge&logo=Microsoft%20Teams&logoColor=white)](#)
+  [![Planificación](https://img.shields.io/badge/planning-red?style=for-the-badge&logo=Trello&logoColor=white)](#)
+  [![Arquitectura](https://img.shields.io/badge/architetures-grey?style=for-the-badge&logo=Android%20Studio&logoColor=white)](#)
+  [![Trabajo en Equipo](https://img.shields.io/badge/work%20with%20teams-blueviolet?style=for-the-badge&logo=Microsoft%20Teams&logoColor=white)](#)
 
 </details>
 
-### Recently, she worked on
-![Wwakatime stats](https://github-readme-stats-taupe-two.vercel.app/api/wakatime?username=clcmo&hide_title=true&hide_border=true&langs_count=5&bg_color=00000000&text_color=777)
+### Recientemente, trabajo en
+![Wwakatime stats](https://github-readme-stats-taupe-two.vercel.app/api/wakatime?username=antogz&hide_title=true&hide_border=true&langs_count=5&bg_color=00000000&text_color=777)
 
 </details>
 
@@ -116,35 +115,19 @@ I also have knowledge in two more languages: English and French, and I aim, in a
 
 <details>
   <summary>
-    <h2>Camila's Updates</h2>
+    <h2>🛠 Actualizaciones de David</h2>
   </summary>
 
-### On Her Blog (in Portuguese)
-<!-- BLOG:START -->
-- [“Conversando” com uma IA: perguntei ao Bard, do Google, sobre o trabalho do futuro](https://camilaloliveira.com.br/blog/milla/conversando-com-uma-ia-perguntei-ao-bard-do-google-sobre-o-trabalho-do-futuro/)
-- [O desafio do debate: a guerra de informações sobre o PL das Fake News](https://camilaloliveira.com.br/blog/milla/o-desafio-do-debate-a-guerra-de-informacoes-sobre-o-pl-das-fake-news/)
-- [Precisamos conversar sobre a violência](https://prensa.li/@clcmo/precisamos-conversar-sobre-a-violencia)
-- [E o Mundo Caiu?](https://prensa.li/@clcmo/e-o-mundo-caiu)
-<!-- BLOG:END -->
+### En su GitHub
 
-### On Her YouTube (in Portuguese)
-<!-- YOUTUBE:START --><table><tr><td width="250px"><a href="https://www.youtube.com/watch?v=LMZ6nu2wDXk"><img width="200px" src="https://i.ytimg.com/vi/LMZ6nu2wDXk/mqdefault.jpg"></a></td>
-<td width="800px"><a href="https://www.youtube.com/watch?v=LMZ6nu2wDXk">Exemplo de App criado em Flutter para Android</a><br/>Jan 19, 2023</td></tr></table>
-<table><tr><td width="250px"><a href="https://www.youtube.com/watch?v=mPbHteaCD6o"><img width="200px" src="https://i.ytimg.com/vi/mPbHteaCD6o/mqdefault.jpg"></a></td>
-<td width="800px"><a href="https://www.youtube.com/watch?v=mPbHteaCD6o">Exemplo de App criado em Flutter para iOS</a><br/>Jan 19, 2023</td></tr></table>
-<table><tr><td width="250px"><a href="https://www.youtube.com/watch?v=gGDdalEaHVU"><img width="200px" src="https://i.ytimg.com/vi/gGDdalEaHVU/mqdefault.jpg"></a></td>
-<td width="800px"><a href="https://www.youtube.com/watch?v=gGDdalEaHVU">Conhecendo o jogo Destiny 2</a><br/>Dec 27, 2022</td></tr></table>
-<table><tr><td width="250px"><a href="https://www.youtube.com/watch?v=_qQlRJ88-Do"><img width="200px" src="https://i.ytimg.com/vi/_qQlRJ88-Do/mqdefault.jpg"></a></td>
-<td width="800px"><a href="https://www.youtube.com/watch?v=_qQlRJ88-Do">Jogando GT ao vivo</a><br/>Oct 26, 2022</td></tr></table>
-<!-- YOUTUBE:END -->
-
-### On Her GitHub
 <!--RECENT_ACTIVITY:start-->
-1. ⬆️ Pushed 1 commit(s) to [studiourbanna/encurtai](https://github.com/studiourbanna/encurtai)<br>
-2. ⬆️ Pushed 1 commit(s) to [studiourbanna/encurtai](https://github.com/studiourbanna/encurtai)<br>
-3. ⬆️ Pushed 1 commit(s) to [studiourbanna/encurtai](https://github.com/studiourbanna/encurtai)<br>
-4. ⬆️ Pushed 1 commit(s) to [studiourbanna/encurtai](https://github.com/studiourbanna/encurtai)<br>
-5. ⬆️ Pushed 2 commit(s) to [studiourbanna/encurtai](https://github.com/studiourbanna/encurtai)<br>
+1. ⬆️ Pushed 16 commit(s) a [Portafolio](https://github.com/AntoGzz/AntoGzz.github.io)<br>
+2. ⬆️ Pushed 1 commit(s) a [Proyecto Universitario](https://github.com/Proyecto-Sigseccaeb/Sigseccaeb_V8)<br>
+3. ⬆️ Pushed 18 commit(s) a [Wygosites](https://github.com/AntoGzz/project-wygosites)<br>
+4. ⬆️ Pushed 12 commit(s) a [A&M Abogados](https://github.com/AntoGzz/project-aym)<br>
+5. ⬆️ Pushed 5 commit(s) a [Nuevamente](https://github.com/imagina/project-montajes)<br>
+6. ⬆️ Pushed 5 commit(s) a [Montajes](https://github.com/imagina/project-montajes)<br>
+7. ⬆️ Pushed 5 commit(s) a [New Planet](https://github.com/imagina/project-newplanet)<br>
 <!--RECENT_ACTIVITY:end-->
 
 </details>
