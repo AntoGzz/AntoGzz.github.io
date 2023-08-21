@@ -1470,18 +1470,6 @@
                               <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
                                   <img src="/assets/images/clients/disglobal.webp" alt="Disglobal">
                               </div>
-                              <!-- <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
-                                  <img src="/assets/images/clients/client-5.webp" alt="client">
-                              </div>
-                              <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
-                                  <img src="/assets/images/clients/client-6.webp" alt="client">
-                              </div>
-                              <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
-                                  <img src="/assets/images/clients/client-7.webp" alt="client">
-                              </div>
-                              <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
-                                  <img src="/assets/images/clients/client-8.webp" alt="client">
-                              </div> -->
                           </div>
                       </div>
   
@@ -1502,7 +1490,7 @@
                       <h3 class="scroll-animation" data-animation="fade_from_bottom">quirozd70@gmail.com</h3>
                       <p id="required-msg">* Los campos marcados son obligatorios para llenar.</p>
 
-                      <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" action="mailer.php">
+                      <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" action="" enctype="multipart/form-data">
                           <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                             Su mensaje fue enviado exitosamente.
                           </div>
@@ -1530,11 +1518,11 @@
                                       <label for="subject">Asunto <sup>*</sup></label>
                                       <select name="subject" id="subject">
                                           <option value="">Selecciona un elemento</option>
-                                          <option value="subject1">Desarrollo Full-Stack</option>
-                                          <option value="subject2">Desarrollo Backend</option>
-                                          <option value="subject3">Desarrollo Frontend</option>
-                                          <option value="subject4">Desarrollo ApiRest</option>
-                                          <option value="subject5">Desarrollo Página Web</option>
+                                          <option value="Desarrollo Full-Stack">Desarrollo Full-Stack</option>
+                                          <option value="Desarrollo Backend">Desarrollo Backend</option>
+                                          <option value="Desarrollo Frontend">Desarrollo Frontend</option>
+                                          <option value="Desarrollo ApiRest">Desarrollo ApiRest</option>
+                                          <option value="Desarrollo Página Web">Desarrollo Página Web</option>
                                       </select>
                                   </div>
                               </div>
@@ -1547,10 +1535,10 @@
                               <div class="col-md-12">
                                   <div class="input-group">
                                       <label for="message">Mensaje</label>
-                                      <textarea name="message" id="message" placeholder="Escribe tu mensaje aqui ..."></textarea>
+                                      <textarea name="message" id="message" rows="2" style="max-height: 100px;" placeholder="Escribe tu mensaje aqui ..."></textarea>
                                   </div>
                               </div>
-                              <div class="col-md-12">
+                              <!-- <div class="col-md-12">
                                   <div class="input-group upload-attachment">
                                       <div>
                                           <label for="upload-attachment">
@@ -1559,11 +1547,12 @@
                                           </label>
                                       </div>
                                   </div>
-                              </div>
+                              </div> -->
                               <div class="col-md-12">
                                   <div class="input-group submit-btn-wrap">
                                       <button class="theme-btn" name="submit" type="submit" id="submit-form">Enviar Mensaje</button>
                                   </div>
+                                    <a id="send-mail" style="display: none;">Send</a>
                               </div>
                           </div>
                       </form>
@@ -1573,7 +1562,7 @@
         </div>
       </div>
     </main>
-
+  
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/owl.carousel.js"></script>

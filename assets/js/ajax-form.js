@@ -1,76 +1,40 @@
 (function ($) {
-    'use strict';
-    var form = $('.contact-form'),
-        message = $('.messenger-box-contact__msg'),
-        form_data;
+  "use strict";
+  var $form = $(".contact-form");
 
-    // const submit = document.getElementById("submit-form");
-    // submit.addEventListener("click", validate);
-    // function validate(e) {
-    //     const message = document.getElementById('required-msg');
+  const $buttonMailto = document.querySelector("#send-mail");
+  const $messageBox = document.getElementById("required-msg");
 
-    //     const fullName = document.getElementById("full-name");
-    //     const email = document.getElementById("email");
-    //     const subject = document.getElementById("subject");
-    //     let valid = true;
+  const $fullName = document.getElementById("full-name");
+  const $subject = document.getElementById("subject");
+  const $phone = document.getElementById("phone-number");
+  const $budget = document.getElementById("budget");
+  const $email = document.getElementById("email");
+  const $message = document.getElementById("message");
 
-    //     if (!fullName.value || !email.value || !subject.value) {
-    //         message.classList.add('show');
-    //         fullName.classList.add("invalid");
-    //     } else {
-    //         message.classList.remove('show');
-    //     }
-        
-    //     return valid;
-    // }
+  $form.submit(function (e) {
+    e.preventDefault();
 
-
-    // Success function
-    function done_func(response) {
-        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 3000);
-        form.find('input:not([type="submit"]), textarea').val('');
+    if (
+      !$fullName.value ||
+      !$email.value ||
+      !$subject.value ||
+      !$message.value
+    ) {
+      $messageBox.classList.add("show");
+      $fullName.classList.add("invalid");
+      console.log("Campos esenciales vacíos por favor verifique");
+      return false;
     }
+    $messageBox.classList.remove("show");
 
-    // fail function
-    function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 3000);
-    }
-    
-    form.submit(function (e) {
-        e.preventDefault();
+    const form = new FormData(this);
 
-        
-        const message = document.getElementById('required-msg');
+    $buttonMailto.setAttribute(
+      "href",
+      `mailto:quirozd70@gmail.com?subject=${$subject.value} - ${$email.value}&body= - Teléfono: ${$phone.value}%0D%0A - Email: ${$email.value}%0D%0A - Presupuesto Estimado: $.${$budget.value}%0D%0A - Descripción: ${$message.value} %0D%0A`
+    );
 
-        const fullName = document.getElementById("full-name");
-        const email = document.getElementById("email");
-        const subject = document.getElementById("subject");
-
-        if (!fullName.value || !email.value) {
-            message.classList.add('show');
-            fullName.classList.add("invalid");
-            console.log('false');
-            return false
-        }
-        message.classList.remove('show');
-
-        form_data = $(this).serialize();
-        console.log("true");
-        /* $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func); */
-    });
-    
+    $buttonMailto.click();
+  });
 })(jQuery);

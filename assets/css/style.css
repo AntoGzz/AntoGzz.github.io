@@ -677,7 +677,7 @@ main.drake-main {
     line-height: 60px;
     color: #fff;
     font-weight: 300;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
 }
 .section-header h1 span {
     color: var(--primary_color);
@@ -1386,14 +1386,14 @@ body .body-overlay {
 
 /* 18 - Contact */
 .contact-area {
-    padding-top: 90px;
+    padding-top: 40px;
     padding-bottom: 50px;
 }
 .contact-area .contact-content h3 {
     font-size: 24px;
     color: #fff;
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 .contact-area .contact-content #required-msg {
     color: #fc4545;
@@ -1483,7 +1483,7 @@ body .body-overlay {
 }
 .contact-area .contact-content .contact-form .input-group.submit-btn-wrap {
     margin-bottom: 0;
-    margin-top: 18px;
+    /* margin-top: 18px; */
 }
 
 
@@ -2116,4 +2116,8 @@ body .body-overlay {
 
 .global-color .setting-toggle i {
     animation: rotating 3s infinite linear !important;
+}
+
+.hidden-field {
+    display: none;
 }
