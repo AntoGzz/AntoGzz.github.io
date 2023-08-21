@@ -1,4 +1,5 @@
 <!--TEMPLATE https://github.com/clcmo/clcmo/tree/main -->
+<!-- https://github-readme-stats-taupe-two.vercel.app/api/wakatime?username=antogz&hide_title=true&hide_border=true&langs_count=5&bg_color=00000000&text_color=777 -->
 
   
   <h1><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%" style="background-color: transparent;"> Hola, Soy David Quiroz 
@@ -107,7 +108,7 @@ Me considero un desarrollador versátil con una sólida comprensión de las últ
 </details>
 
 ### Recientemente, trabajo en
-![Wwakatime stats](https://github-readme-stats-taupe-two.vercel.app/api/wakatime?username=antogz&hide_title=true&hide_border=true&langs_count=5&bg_color=00000000&text_color=777)
+![Wwakatime stats](https://github-readme-stats-taupe-two.vercel.app/api/wakatime?username=antogz)
 
 </details>
 
