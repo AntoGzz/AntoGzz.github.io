@@ -1,1 +1,42 @@
-Cache-Control: max-age=31536000
+yml
+# Configuración de GitHub Pages
+# theme: jekyll-theme-cayman
+title: Portafolio AntoGz
+description: Les presento mi portafolio actual, espero sea de su agrado!
+
+# Configuración del lenguaje
+language: es
+
+# Configuración de la URL base
+baseurl: ""
+
+# Configuración de los plugins
+# plugins:
+  # - jekyll-feed
+
+# Configuración de los enlaces de navegación
+# nav:
+#   - title: Inicio
+#     url: /
+#   - title: Acerca de
+#     url: /about
+#   - title: Blog
+#     url: /blog
+
+# Configuración de los enlaces de redes sociales
+social:
+  - title: GitHub
+    url: https://www.instagram.com/quirozd70/?hl=es-la
+  - title: GitLab
+    url: https://gitlab.com/david-quiroz
+  - title: Linkedin
+    url: https://www.linkedin.com/in/david-quiroz-199595166/
+  - title: Instagram
+    url: https://www.instagram.com/quirozd70/?hl=es-la
+
+# Otras configuraciones personalizadas que desees agregar
+image:
+  preload: yes
+  loading: lazy
+
+cache_control: max-age=31536000
