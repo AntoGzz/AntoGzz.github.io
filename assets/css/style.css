@@ -895,7 +895,7 @@ body .body-overlay {
 .resume-area .resume-content .resume-timeline .item {
     position: relative;
     padding-left: 74px;
-    padding-bottom: 68px;
+    padding-bottom: 40px;
 }
 .resume-area .resume-content .resume-timeline .item:last-child {
     padding-bottom: 0;
@@ -926,7 +926,7 @@ body .body-overlay {
 }
 .resume-area .resume-content .resume-timeline .item .date {
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
     transition: .3s;
 }
 .resume-area .resume-content .resume-timeline .item h2 {
