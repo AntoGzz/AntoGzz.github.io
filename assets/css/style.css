@@ -1027,7 +1027,8 @@ body .body-overlay {
 .skills .skill .skill-inner {
     border: 2px solid #565656;
     border-radius: 85px;
-    padding: 54px 0 48px 0;
+    /* padding: 54px 0 48px 0; */
+    padding: 15px 0 15px 0;
     margin-bottom: 20px;
     transition: .3s;
 }
@@ -1036,7 +1037,8 @@ body .body-overlay {
 }
 .skills .skill .skill-inner img {
     display: block;
-    margin: auto auto 29px auto;
+    /* margin: auto auto 10px auto; */
+    margin: auto 30px auto 30px;
 }
 .skills .skill .skill-inner h1 {
     font-size: 30px;
