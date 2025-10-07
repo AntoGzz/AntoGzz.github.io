@@ -47,6 +47,7 @@ Me considero un desarrollador versátil con una sólida comprensión de las últ
   [![CSS3](https://img.shields.io/badge/css-grey?style=for-the-badge&logo=CSS3&logoColor=white)](https://github.com/AntoGzz?tab=repositories&q=&type=&language=css&sort=) 
   [![SCSS](https://img.shields.io/badge/scss-violet?style=for-the-badge&logo=Sass&logoColor=white)]()
   [![BOOSTRAP](https://img.shields.io/badge/boostrap-darkred?style=for-the-badge&logo=Boostrap&logoColor=white)]()
+  [![React](https://img.shields.io/badge/react-blue?style=for-the-badge&logo=React&logoColor=white)](#)
 
 ### 📚 Backend
   
